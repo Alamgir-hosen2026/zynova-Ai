@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – ZYNOVA AI</title>
-<meta name="description" content="Privacy Policy for ZYNOVA AI Studio & offline Ai, an Android AI assistant by Alamgir App Studio.">
+<meta name="description" content="Privacy Policy for ZYNOVA AI, an Android AI assistant by Alamgir App Studio.">
 <style>
   :root {
     --purple: #5B2BD6;
@@ -113,7 +113,7 @@
   <div class="brand">ZYNOVA AI</div>
   <h1>Privacy Policy</h1>
   <p>Your chats, your files and your memories belong to you. This page explains, in plain language, what ZYNOVA AI does with your information.</p>
-  <div class="meta">Effective date: November 9, 2026 &nbsp;•&nbsp; Last updated: November 9, 2026</div>
+  <div class="meta">Effective date: November 12, 2026 &nbsp;•&nbsp; Last updated: November 12, 2026</div>
 </header>
 
 <main>
@@ -142,7 +142,7 @@
     <li><a href="#documents">Documents, photos and OCR</a></li>
     <li><a href="#memory">Memory and Knowledge Brain</a></li>
     <li><a href="#permissions">Permissions</a></li>
-    <li><a href="#billing">Subscription and payments</a></li>
+    <li><a href="#billing">Cost and Online AI daily limit</a></li>
     <li><a href="#third">Third-party services</a></li>
     <li><a href="#storage">Storage, security and backups</a></li>
     <li><a href="#control">Your choices and rights</a></li>
@@ -164,22 +164,22 @@
 <section class="card" id="how">
   <h2>2. How the app works</h2>
 
-  <h3>2.1 Start-up and subscription</h3>
-  <p>When you open ZYNOVA AI you see a short splash screen. The app then checks with Google Play whether you have an active subscription. If you do, you go to the Main screen. If you do not, you see the Subscribe page, which lists the app's features and the price. The Main screen is available only with an active subscription.</p>
+  <h3>2.1 Start-up and the welcome page</h3>
+  <p>When you open ZYNOVA AI you see a short splash screen. The first time you use the app, a welcome page explains how the app works: it is made mainly for Offline AI, you download one offline model file, Online AI gives a limited number of answers every day, and Offline AI is unlimited. The welcome page also has a button to download the model that suits your phone. You can skip the download and do it later in the Model Center. The app is free to use and has no account, sign-up or subscription.</p>
 
   <h3>2.2 The Main screen</h3>
   <p>The Main screen is a home for all modules: Smart Chat, Voice Studio, Document Studio, AI Tools, Personality Studio, Knowledge Brain, Memory, Model Center, Device AI Lab, Language Hub, Chat History, Privacy Center and Settings.</p>
 
-  <h3>2.3 Smart Chat and the three modes</h3>
+  <h3>2.3 Smart Chat and the two modes</h3>
   <ul>
-    <li><strong>Auto</strong> – the app chooses between Online AI and Offline AI for each question. Questions that need fresh information go online (if you allowed it); other questions can be answered offline.</li>
-    <li><strong>Online</strong> – your question is answered by Google Gemini. This needs internet and your permission.</li>
-    <li><strong>Offline</strong> – your question is answered by an AI model stored on your phone. Nothing leaves your device.</li>
+    <li><strong>Offline</strong> (default) – your question is answered by an AI model stored on your phone. Nothing leaves your device, and there is no limit on how much you can use it. The app always opens in Offline mode.</li>
+    <li><strong>Online</strong> – your question is answered by Google Gemini. This needs internet and your permission. Online AI has a daily limit of 5 answers (tokens) per day. Each Online answer uses one token.</li>
   </ul>
-  <p>A badge shows which AI answered. If Online AI is unavailable (for example, no internet), the app can fall back to Offline AI automatically, provided the offline model is installed. When the answering AI changes during a chat, the app passes a short hand-off note so the new AI understands the conversation.</p>
+  <p>When all 5 Online answers for the day are used, the app automatically switches to Offline mode, the Online button turns pale and does not work for the rest of that day, and the tokens come back the next day. The number of tokens used and the date are counted and stored only on your phone. A badge shows which AI answered. When the answering AI changes during a chat, the app passes a short hand-off note so the new AI understands the conversation.</p>
+  <p>Offline AI cannot read images or files; those need Online AI.</p>
 
   <h3>2.4 Your permission for Online AI</h3>
-  <p>Before the first Online answer the app asks whether you allow Online AI. If you decline, the app uses Offline AI only. You can change this at any time in the Privacy Center or with the Offline privacy mode switch in the Model Center.</p>
+  <p>Before the first Online answer the app asks whether you allow Online AI. If you decline, the app uses Offline AI only. You can change this at any time in the Privacy Center or with the Offline privacy mode switch in the Model Center. Offline privacy mode keeps the app fully offline.</p>
 </section>
 
 <section class="card" id="features">
@@ -270,7 +270,7 @@
     </tr>
     <tr>
       <td><strong>Settings</strong></td>
-      <td>Backup and restore, links to this policy and the Terms, subscription management.</td>
+      <td>Backup and restore, links to this policy and the Terms.</td>
       <td>Backup files go where you save them.</td>
     </tr>
   </table>
@@ -327,21 +327,26 @@
   <h3>Web research and sources</h3>
   <p>When Current Information mode is on, Gemini may use Google Search. The answer can then show the sources that were used and Google's required search suggestions. Opening a source or a suggestion opens it in your browser, where that website's own privacy rules apply.</p>
   <h3>Fallback to Offline AI</h3>
-  <p>If Online AI fails (no internet, quota reached, or a server problem), the app can answer with Offline AI instead, if the offline model is installed.</p>
+  <p>If Online AI fails (no internet or a server problem), or when your 5 Online answers for the day are used, the app answers with Offline AI instead, if the offline model is installed.</p>
 </section>
 
 <section class="card" id="offline">
   <h2>6. Offline AI and the model download</h2>
-  <p>Offline AI uses the <strong>Gemma 4 E2B</strong> model, which runs directly on your phone through the LiteRT-LM engine (Google AI Edge). In Offline mode:</p>
+  <p>Offline AI uses a <strong>Gemma</strong> model that runs directly on your phone through the LiteRT-LM engine (Google AI Edge). The app checks your phone's RAM and offers only one model, the one that suits your phone:</p>
   <ul>
-    <li>Your messages are processed on your phone's processor (GPU or CPU).</li>
+    <li><strong>Phones with less RAM:</strong> Gemma 3 1B (about 560 MB). It answers in English only.</li>
+    <li><strong>Phones with more RAM:</strong> Gemma 4 E2B (about 2.4 GB). It can answer in many languages.</li>
+  </ul>
+  <p>In Offline mode:</p>
+  <ul>
+    <li>Your messages are processed on your phone's processor (CPU by default; GPU only if you turn it on).</li>
     <li>Nothing is sent to the internet.</li>
     <li>The model is loaded into memory only when needed and is released automatically when the phone is low on memory or the app goes to the background.</li>
   </ul>
   <h3>Downloading the model</h3>
-  <p>The model file (about 2.4 GB) is not bundled in the app. You download it from inside the app (Model Center). The file is hosted on Hugging Face (<code>huggingface.co</code>) in the Alamgir App Studio repository. When you download it, Hugging Face and its content delivery network can see your IP address and basic technical request details, as with any website download. No chat content or personal data is sent with the download.</p>
+  <p>The model file (about 560 MB or 2.4 GB, depending on your phone) is not bundled in the app. You download it from inside the app (Model Center). The file is hosted on Hugging Face (<code>huggingface.co</code>) in the Alamgir App Studio repository. When you download it, Hugging Face and its content delivery network can see your IP address and basic technical request details, as with any website download. No chat content or personal data is sent with the download.</p>
   <p>The download runs as a foreground service with a notification, can be paused and resumed, checks that you have enough free storage, warns you before using mobile data, and verifies the file with a SHA-256 checksum so that a damaged or altered file is rejected.</p>
-  <p>You can delete the model at any time from the Model Center.</p>
+  <p>You can delete the model at any time from the Model Center. If the app finds a model file that your phone does not need, it deletes that file to save storage.</p>
 </section>
 
 <section class="card" id="voice">
@@ -379,7 +384,7 @@
   <div class="table-wrap">
   <table>
     <tr><th>Permission</th><th>Why the app needs it</th></tr>
-    <tr><td>Internet</td><td>Online AI, the one-time model download, Google Play subscription checks, and opening web links.</td></tr>
+    <tr><td>Internet</td><td>Online AI, the one-time model download, and opening web links.</td></tr>
     <tr><td>Network state</td><td>To know whether you are online or on Wi-Fi before downloading the model or calling Online AI.</td></tr>
     <tr><td>Notifications (Android 13+)</td><td>To show the progress of the model download.</td></tr>
     <tr><td>Foreground service (data sync)</td><td>To keep the large model download running reliably while you use other apps.</td></tr>
@@ -390,9 +395,9 @@
 </section>
 
 <section class="card" id="billing">
-  <h2>11. Subscription and payments</h2>
-  <p>ZYNOVA AI is offered as a monthly subscription (displayed in the app, currently USD 2.99 per month, with the price shown in your local currency by Google Play). Purchases are processed entirely by <strong>Google Play</strong>. We never see or store your card number, bank details or payment credentials.</p>
-  <p>The app uses the Google Play Billing Library to ask Google Play whether your subscription is active. It stores the result locally on your phone (for up to 3 days) so the app can keep working if Google Play cannot be reached for a short time. You can manage or cancel your subscription any time in Google Play under <em>Payments &amp; subscriptions → Subscriptions</em>. Refunds are handled under Google Play's policies.</p>
+  <h2>11. Cost and Online AI daily limit</h2>
+  <p>ZYNOVA AI is free to use. There is no subscription, no purchase inside the app and no payment information is collected. The app does not show advertising.</p>
+  <p>Offline AI has no usage limit. Online AI is limited to 5 answers (tokens) per day. The count and the date are stored only on your phone in the app's settings. Clearing the app's data or uninstalling the app resets the count. We do not receive this count.</p>
 </section>
 
 <section class="card" id="third">
@@ -401,7 +406,6 @@
   <table>
     <tr><th>Service</th><th>Used for</th><th>Their policy</th></tr>
     <tr><td>Google Gemini API / Google Search</td><td>Online AI answers and web research (only with your permission)</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-    <tr><td>Google Play Billing</td><td>Subscription and payment</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
     <tr><td>Google AI Edge – LiteRT-LM and Gemma</td><td>Running the offline model on your phone</td><td>Runs locally; no data is sent</td></tr>
     <tr><td>Google ML Kit (text recognition)</td><td>On-device OCR</td><td><a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">developers.google.com/ml-kit/terms</a></td></tr>
     <tr><td>Hugging Face</td><td>Hosting the offline model file for download</td><td><a href="https://huggingface.co/privacy" target="_blank" rel="noopener">huggingface.co/privacy</a></td></tr>
@@ -415,7 +419,7 @@
   <h2>13. Storage, security and backups</h2>
   <ul>
     <li><strong>Private app storage.</strong> Your chats, memories and settings are kept in the app's private storage, which other apps cannot normally access on a non-rooted phone.</li>
-    <li><strong>Encrypted connections.</strong> All network traffic (Gemini, model download, Google Play) uses HTTPS.</li>
+    <li><strong>Encrypted connections.</strong> All network traffic (Gemini and the model download) uses HTTPS.</li>
     <li><strong>Private chat lock.</strong> You can lock individual chats. Opening a locked chat requires your phone's screen lock (PIN, pattern, password or fingerprint). The text of a locked chat is hidden from the history preview and from search. To use this feature your phone must have a screen lock set up.</li>
     <li><strong>No automatic cloud backup.</strong> The app turns off Android's automatic cloud backup, so your chats are not copied to Google Drive by the system.</li>
     <li><strong>Backup and export files.</strong> If you create a backup or export your data, the file is saved where you choose. These files are <strong>not encrypted</strong>. Keep them somewhere safe, and delete them when you no longer need them.</li>
@@ -444,7 +448,7 @@
   <ul>
     <li>Your chats, memories, files and settings stay on your phone until you delete them or uninstall the app.</li>
     <li><strong>Uninstalling the app removes all of its stored data</strong> from your phone, including the offline model. Files you exported or backed up yourself stay where you saved them.</li>
-    <li>"Clear ALL data" in the Privacy Center erases the app's chats, memories, files, folders and settings immediately. Your subscription is handled by Google Play and is not affected.</li>
+    <li>"Clear ALL data" in the Privacy Center erases the app's chats, memories, files, folders and settings immediately.</li>
     <li>Data that was sent to Google for an Online answer is kept according to Google's own retention rules and cannot be deleted from inside our app.</li>
   </ul>
 </section>
@@ -474,18 +478,18 @@
   <p>If you have questions about this Privacy Policy or want to make a privacy request, please contact:</p>
   <p>
     <strong>Alamgir App Studio</strong><br>
-    Developer: Alamgir Hosen<br>
+    Developer: Alamgir Hossain<br>
     Country: Bangladesh<br>
     Email: <a href="mailto:alamgirhosenapp2026@gmail.com">alamgirhosenapp2026@gmail.com</a>
   </p>
   <div class="note">We aim to reply within a reasonable time.</div>
 </section>
-
+ 
 </main>
 
 <footer>
   &copy; 2026 Alamgir App Studio. All rights reserved.<br>
-  ZYNOVA AI &nbsp;•&nbsp; Privacy Policy &nbsp;•&nbsp; Last updated November 9, 2026
+  ZYNOVA AI &nbsp;•&nbsp; Privacy Policy &nbsp;•&nbsp; Last updated November 12, 2026
 </footer>
 
 </body>
